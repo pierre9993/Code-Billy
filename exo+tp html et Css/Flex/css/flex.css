@@ -1,0 +1,14 @@
+.container   {
+    display: flex;
+flex-wrap: wrap;
+background: rebeccapurple;
+flex-direction: row;
+justify-content: center;
+}
+.container>div{
+padding: 20px 30px;
+background: plum;
+margin: 5px ;
+color: maroon;
+font-size: 15px;
+}

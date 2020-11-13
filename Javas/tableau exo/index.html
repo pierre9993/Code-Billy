@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><i class="fas fa-bars"></i><a > Menu</a></li>
+            <li><i class="fas fa-shopping-basket"></i><a > Produits</a></li>
+            <li><i class="fas fa-address-book"></i> <a onclick="fcont()" id="contact"> Contact</a></li>
+            <li><i class="fas fa-wifi"></i> <a onclick="bconnec()" id="connecm"> Connexion</a></li>
+        </ul>
+        <article id="connec">
+            <button class="anuc" onclick="annulec()"><i class="fas fa-redo-alt"></i></button>
+            <center>
+                <h2>Connexion</h2>
+                <hr>
+            </center>
+            <form name="connexion" onsubmit="return false">
+
+                <div class="pls">
+                    <div>
+                        <label for='id'>Entrer votre Identifiant: </label>
+                        <input type="text" name="id" id="id" placeholder="Identifiant" />
+                    </div>
+                    <div>
+                        <label for='mdp'>Entrer votre Mot de Passe: </label>
+                        <input type="password" name="mdp" id="mdp" placeholder="Mot de passe"/>
+                    </div>
+                        <hr>
+                    <div>
+                        <button style="width: 100%;margin-top: 10px;" onclick="envoyerc()">Se Connecter</button>
+                    </div>
+                    <br>
+                </div>
+            </form>
+
+        </article>
+        <div class="contform">
+            <button onclick="annulef()"><i class="fas fa-redo-alt"></i></button>
+            <center>
+                <h2>Contact</h2>
+                <hr>
+            </center>
+            <form name="contact"  onsubmit="return false">
+                
+                <div>
+                    <label for='nom'>Entrer votre nom*: </label>
+                    <input type="text" name="nom" id="nom" placeholder="Entrez votre Nom"/>
+                </div>
+                <div>
+                    <label for="prenom">Entrer votre prénom*: </label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Entrez votre Prénom"/>
+                </div>
+                <div>
+                    <label for="email">Entrer votre mail*: </label>
+                    <input type="text" name="email" id="email" placeholder="Entrez votre mail"/>
+                </div>
+                <div>
+                    <label for="tel">Entrer votre numéro*: </label>
+                    <input type="text" name="tel" id="tel" placeholder="Entrez votre numéro "/>
+                </div>
+                <div>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message" placeholder="Entrez votre message"></textarea>
+                </div>
+                <hr>
+
+                <div>
+                    <button style="width: 100%;margin-top: 10px;" onclick="envoyerf()">Envoyer</button>
+                </div>
+                <br>
+            </form>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <article id="produit">
+            <div class="div">
+                <article>
+                    <img src="https://picsum.photos/399/300" alt="">
+                    <h3>Chaise</h3>
+                    <p>10.00 €</p>
+                    <button onclick="nouvelArticle('Chaise',10,0)">Ajouter au panier</button>
+                    <!--   <button onclick="nouvelArticle('Objet1.1',PRIX)">Ajouter au panier</button>
+-->
+                </article>
+                <article>
+                    <img src="https://picsum.photos/300/299" alt="">
+                    <h3>Table</h3>
+                    <p>49.00 €</p>
+                    <button onclick="nouvelArticle('Table',49,1)">Ajouter au panier</button>
+                </article>
+            </div>
+
+            <div class="div">
+                <article>
+                    <img src="https://picsum.photos/290/300" alt="">
+                    <h3>Porte</h3>
+                    <p>19.99 €</p>
+                    <button onclick="nouvelArticle('Porte',20,2)">Ajouter au panier</button>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/300/301" alt="">
+                    <h3>Ceinture</h3>
+                    <p>4.99 €</p>
+                    <button onclick="nouvelArticle('Ceinture',5,3)">Ajouter au panier</button>
+                </article>
+            </div>
+            <div class="div">
+                <article>
+                    <img src="https://picsum.photos/295/300" alt="">
+                    <h3>Diabolo</h3>
+                    <p>0.99€</p>
+                    <button onclick="nouvelArticle('Diabolo',1,4)">Ajouter au panier</button>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/301/301" alt="">
+                    <h3>Furet</h3>
+                    <p>200.00€</p>
+                    <button onclick="nouvelArticle('Furet',200,5)">Ajouter au panier</button>
+                </article>
+            </div>
+        </article>
+        <aside id="barre">
+            <h2><i id="shop" class="fas fa-shopping-bag"></i></h2>
+            <hr id="pan" />
+            <div class="panier">
+                <ul>
+
+                </ul>
+            </div>
+            <hr>
+            <div id="tot" class="tot">Total : 0 €
+            </div>
+            <div id="borre">
+
+            </div>
+        </aside>
+    </main>
+
+    <div class="wind">
+        
+
+    </div>
+    <div class="fcont">
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

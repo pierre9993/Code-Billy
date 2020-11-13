@@ -1,0 +1,14 @@
+.bouton_valider{
+    background: linear-gradient(lightgreen,rgba(48, 48, 48, 0.767));
+    font-size:smaller;
+    border-radius: 50px 10px;
+    width: 70px;
+    height: 50px;
+    
+}
+
+.bouton_annuler{
+    background:linear-gradient(white,violet);
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+}

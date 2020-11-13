@@ -1,0 +1,15 @@
+table{
+    border: ridge 2px black;
+    text-align: center;
+}
+th{
+    text-align: center;
+
+}
+td{
+    border: ridge 2px black;
+
+}
+#numero{
+    background-color: rgb(185, 185, 185);
+}

@@ -1,0 +1,35 @@
+UX Partie Web:
+- 2 colonnes pour ne pas faire de blocs qui prennent toutes la
+largeur de la page
+
+- colonne gauche avec les informations de contact en haut
+car informations très importantes
+
+-de même avec les expériences pro. a droite car 
+information la plus intéréssantes
+
+- mettre les expérience pro/diplomes dans des cases pour qu'elle
+ne prennent pas toute la largeur
+
+-mettre les exp. pro. cote a cote pour avoir toutes les infos
+sur une ligne sans avoir a scroller
+
+-informations moins utiles (loisir/langues) en bas de pages
+
+
+
+UX Partie Mobile:
+- colonne gauche fusionné avec colonne de droite pour rendre plus
+lisible le site
+
+- Menu en absolute en haut a droite pour pouvoir naviguer partout
+rapidement car la page est assez longue
+
+- Boutons contact pour affichez l'information voulu et aérer 
+l'espace
+
+- Exp. Pro. misent en colonnes pour éviter que les blocs soient
+trop serrés pour la largeur du téléphone
+
+- Catégories Compétences/loisirs misent en bas de pages 
+car - importantes

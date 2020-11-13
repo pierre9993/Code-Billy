@@ -1,0 +1,28 @@
+@keyframes teuf{
+    0% {
+        margin-left: 30%;
+      }
+    50%{
+        margin-left: 60%
+    }
+    100%{
+        margin-left: 30%;
+      }
+}
+@keyframes tuf{
+    0% {
+        background-color: yellow;
+      }
+    25%{
+        background-color: yellowgreen;
+    }
+    50%{
+        background-color: tomato;
+      }
+      75%{
+        background-color: lightblue;
+      }
+    100%{
+        background-color: yellow; 
+    }
+}

@@ -1,0 +1,90 @@
+div{
+    width: 100px;
+    height: 100px;
+}/* Header */
+.redhg{
+    position: fixed;
+    border: solid 2px red ;
+    top: 0;
+    left: 0;
+    background-image: url("../img/tenor.gif");
+background-size: 112px 100px;
+}
+.redhd{
+    position: fixed;
+    border:solid 2px red ;
+    top: 0;
+    right: 0;
+    background-image: url("../img/tenor.gif");
+background-size: 112px 100px;
+}
+.verthd{
+position: absolute;
+border: solid 2px green;
+top: 0;
+left: 200px;
+background-image: url("../img/tenor.gif");
+background-size: 112px 100px;
+}/* Main */
+main{
+    position: sticky;
+    top: 0px;
+    bottom: 0;
+    margin-top: 200px;
+    border: solid 1px black;
+    margin-bottom:800px;
+    min-height: 300px ;
+    max-height: 600px;  
+    background-image: url("../img/tenor.gif");
+    background-size: 100% 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+p{
+    width: 120%;
+}
+.blubg{
+    position: relative;
+    border: solid 2px blue;
+    background-image: url("../img/tenor.gif");
+background-size: 112px 100px;
+}
+.bluhd{
+    position: relative;
+    border: solid 2px blue;
+    float: right;
+    background-image: url("../img/tenor.gif");
+    background-size: 112px 100px;
+}/* Footer */
+.redbg{
+
+        position: fixed;
+        border:solid 2px red ;
+        bottom: 0;
+       left: 0;
+       background-image: url("../img/tenor.gif");
+       background-size: 112px 100px;
+}
+.redbd{
+    position: fixed;
+    border:solid 2px red ;
+    bottom: 0;
+    right:  0;
+    background-image: url("../img/tenor.gif");
+    background-size: 112px 100px;
+}
+.vertbd{
+    position: absolute;
+    border: solid 2px green;
+    bottom: 100px;
+    right : 00px;
+    background-image: url("../img/tenor.gif");
+background-size: 112px 100px;
+    }
+    @media screen and (max-width:800px){
+      main{
+          overflow-x: visible;
+      }
+      body{background-color: red;}
+    }

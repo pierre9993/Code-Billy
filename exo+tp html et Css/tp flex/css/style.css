@@ -1,0 +1,191 @@
+nav>div>ul{
+text-decoration: none;
+display: flex;
+}
+nav>div>ul>li{
+    list-style-type: none;
+    text-decoration: none;
+    background-color: orange;
+    margin-left: 5px;padding: 10px;
+}
+nav>div>ul>li>a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    
+}
+nav>div>ul>li:hover a{
+    background-color: rgb(207, 135, 1);
+    border-radius: 17%;
+    border: solid;
+    color: white;
+    border-color: black;
+}
+nav>div>ul>li:active a{
+    background-color: rgb(73, 48, 0);
+    color: white;
+    border-radius: 20%;
+}
+
+nav{
+       position: sticky;
+    display: flex;
+    text-align: center;
+    border: ridge 1px black;
+    flex-direction: row;
+    background: orange;
+    justify-content: space-between ;
+}
+.chi{
+    width: 50px;
+    height: 50px;
+}
+.titre{
+    flex-grow: 8;
+}
+nav>div{
+    align-self: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+main{
+  
+    border: groove 3px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: url("https://picsum.photos/1334/600");
+}
+main>article{
+    position: sticky;
+    border: ridge 2px grey;
+    align-self: auto ;
+    margin: 20px;
+    padding-bottom: 30px;
+    padding-right: 0px;
+    background-color: rgb(209, 195, 209);
+}
+main>article>h2{
+    text-align: center;
+}
+body>article{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    border: ridge 2px grey;
+    align-items: flex-end;
+    padding-bottom: 200px;
+}
+body>div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    border: ridge 2px grey;
+    background: url("https://picsum.photos/1369/56");
+}
+div>article{
+    border: solid 2px black;
+    padding :10px;
+    background-color:white;
+   
+}
+article>article{
+    border: solid 2px black;
+    padding :10px;
+    background-color:white;
+}
+body>article{
+    background: url("https://picsum.photos/1370/56");
+}
+article{
+    margin:5px;
+}
+h1,h2{
+    text-decoration: underline black;
+}
+p{
+    margin:5px;
+}
+
+.connec{
+    display: flex;
+}
+.coinf{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    border: outset 1px black;
+    color: white;
+    text-align: left;
+    right: 8px;
+    top: 50px;
+    padding: 10px;
+    box-shadow:0px 8px 19px -2px black;
+}
+.ide{
+    margin-left: 14px;
+    margin-bottom: 2px;
+}
+.connec:hover .coinf{
+    display: block;
+}
+.connec:hover .btn{
+    color: white;
+    cursor: move;
+
+}
+body{
+    background-color: rgb(83, 83, 83);   
+}
+button,input{
+    border: ridge orange;
+    background-color: white;
+}
+
+.bae{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+@media screen and (max-width: 1050px){ /* @media permet de mettre des conditions d'affichage pour certaine condition*/
+body{                                  /* Ici, quand l'écran fait moins de 900px, le fond change de couleur et les articles se mettent en colonnes*/
+    background-color: rgb(26, 26, 26);
+}
+main{
+    flex-direction: column;
+}
+nav{
+    border: groove 5px grey;
+}nav>div>ul{
+    flex-direction: row;
+    padding: 10px;
+}
+nav>div>ul>li>a{
+    color: black;
+    padding: 2px;   
+}
+.men{
+    display: none;
+}
+nav:hover .men{
+    display: flex;
+}
+nav:active .men{
+    display: flex;
+}
+}
+@media screen and (max-width: 600px){
+
+.bae{
+    display: block;
+}
+body>div{
+    display: none;
+    
+}
+body>div{
+    background-color: indianred;
+}
+}

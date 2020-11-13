@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <header>
+        <span>
+            <i class="fas fa-university"></i>
+            <h1>BANQU€</h1>
+        </span>
+        <span class="menu">
+            <span class="under"><a class="cmpt1" href="#tableau1">Compte 1</a></span>
+            <span class="under"><a href="#tableau2">Compte 2</a></span>
+        </span>
+    </header>
+    <main>
+        <div class="tabl1" id="tableau1">
+
+            <h2>Mon compte </h2>
+
+            <div class="soustab">
+                <h3>Résumé</h3>
+                <span class="under">Total :</span><span id="toto1"> 500</span><br /><br>
+            </div>
+            <div class="soustab">
+                <h3>Prévision</h3>
+                <!--       <input type="number" placeholder="Valeur Salaire" id="sal1"></input>-->
+                <span><input id="sal1" type="text" placeholder="Salaire"></input> €</span>
+                <br /><br />
+                <!--<input type="text" id="salaire1"></input> -->
+                <!--<input type="text" placeholder="Durée d'économie">-->
+                <span><input type="text" id="dur1" placeholder="Durée"> </input>mois</span>
+                <br /><br />
+                <!--<input type="text" id="dure1"></input>-->
+                <button onclick="calcule1()">Calculer</button>
+                <br><br>
+                <span class="under">Résultat:</span>
+                <span id="tota1"></span>
+                <br /><br />
+            </div>
+
+            <table class="tablo1">
+                <span class="center"><button onclick="ajout1()">Ajouter une opération</button>
+
+                    <button onclick="fond1()">Rajouter des fonds</button></span>
+                <thead>
+                    <tr>
+                        <th class="th1">Date</th>
+                        <th class="th2">Libellé</th>
+                        <th class="th3">Montant</th>
+                    </tr>
+                </thead>
+                <tbody id="line1">
+
+                </tbody>
+            </table>
+            <br />
+
+        </div>
+
+        <br><br><br>
+        <div class="tabl2" id="tableau2">
+            <h2>Compte de Titouan</h2>
+            <div class="soustab">
+                <h3>Résumé</h3>
+                <span class="under">Total :</span><span id="toto2"> 500</span><br /><br>
+            </div>
+            <div class="soustab">
+                <h3>Prévision</h3>
+                <!--       <input type="text" placeholder="Valeur Salaire">-->
+                <span><input id="sal2" type="text" placeholder="Salaire"> </input>€</span>
+                <br /><br />
+                <!--<input type="text" id="salaire1"></input> -->
+                <!--    <input type="text" placeholder="Durée d'économie">-->
+                <span><input type="text" id="dur2" placeholder="Durée"> </input> mois</span>
+                <br /><br />
+                <!--<input type="text" id="dure1"></input>-->
+                <button onclick="calcule2()">Calculer</button>
+                <br /><br />
+                <span class="under">Résultat:</span>
+                <span id="tota2"></span> <br /><br />
+            </div>
+
+            <table class="tablo2">
+                <span class="center"><button onclick="ajout2()">Ajouter une opération</button>
+                    <button onclick="fond2()">Rajouter des fonds</button></span>
+                <thead>
+                    <tr>
+                        <th class="th1">Date</th>
+                        <th class="th2">Libellé</th>
+                        <th class="th3">Montant</th>
+                    </tr>
+                </thead>
+                <tbody id="line2">
+
+                </tbody>
+            </table>
+            <br />
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

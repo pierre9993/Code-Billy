@@ -1,0 +1,47 @@
+
+#a{
+    color: aqua;
+}
+
+#b{
+    color: beige;
+}
+#c{
+    color: chocolate;
+}
+
+footer a{
+    color: white;
+    font-size: large;
+}
+
+h1{
+    font-size: 25px;
+}
+
+header{
+    size: 150px;
+    color: hotpink;
+background-color: grey;
+}
+
+h2{
+    color:orangered;
+}
+footer{
+    color: white;
+    background-color: black;
+}
+.blo{
+   font-size: 50px;
+    background-color: teal;
+}
+video{
+    width: 320px;
+    height:240px;
+    margin: 0px 0px 0px 320px;
+
+}
+body{
+    background:whitesmoke ;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/button.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balises_css</title>
+</head>
+<body>
+    <header>
+        <!--menu / nom d'entreprise / navigateur du domaine =entête -->
+            <img id="logo" src="../img/meat.png" width="200px" /><br/>
+            <b>Le</b> Logo, ou <strong id="logo">Logo</strong> <!--balise mettre en gras--> <br/>
+            <a href="#A"><b>ALLER A LA PARTIE A</b></a><br/>
+            <a href="#B"><b>ALLER A LA PARTIE B</b></a><br/>
+            <a href="#c"><b>ALLER A LA PARTIE C</b></a>
+    </header>
+    <main>
+       <!--balise type H1/h2=titre par niveau ou P pour un paragraphe-->
+      <h1>JMB en titre 1</h1><hr/>
+      <h2>JMB en titre 2</h2>
+      <h3>JMB en titre 3</h3>
+      <h4>JMB en titre 4</h4>
+      <h5>JMB en titre 5</h5>
+      <h6>JMB en titre 6</h6>
+      <p>Premier <b>paragraphe</b></p>
+      un peu de texte<br/> tout seul <br/> avec des sauts de lignes aléatoires
+      <hr/>     <!--balise ligne-->
+    <a id="A"  href="index.html" target="_blank">index</a>
+    <br/>   <!--l'attribut target="_blank" permet d'ouvrir un lien dans un nouvel onglet -->
+    <a href="https://google.fr" target="_blank" >go google</a>
+    <br/>
+    <a href="#logo"> Logo </a> <!--la balise href suivi de "#" permet de renvoyer a un endroit de la page choisit avec l'option Id définit--><br/>
+
+    <video src="../img/meatest.mp4"   controls muted loop autoplay style="position: relative;left: 190px;bottom: 30px;" > </video>  
+    <p>ouiouiouiouioui</p>
+
+    <hr/>
+
+    <h2 class="blo" id="B">Formulaire de contact</h2>
+        <form  name="contact" id="contact" action="contact.html ">   
+                <!--la balise form créer un formulaire et l'attribut action sert a envoyé les données à une page donné--> 
+
+Genre  <input type="radio" name="genre" value="F" />Femme<input type="radio" name="genre" value="M" />Homme 
+                <!-- l'attribut name permet de lier des imputs de type radio afin qu'ils ne puissent pas être coché simultanéments-->
+<br/>
+Nom    <input type="text" name="nom"/>
+<br/>
+Prénom <input type="text" name="prenom" />
+<br/>
+J'accepte d'être recontacté <input type="radio" name="contacter" value="oui"/>Oui <input type="radio" name="contacter" value="non" />Non <input type="radio" name="contacter" value="pasenvie"/> Pas envie de ouf 
+<br/>
+Ecole <input type="checkbox" name="ecole[]" value="greta" />greta
+      <input type="checkbox" name="ecole[]" value="universite"/> université
+      <br/>
+Ville      <select name="ville" >
+                 <option>Noisy-Le-Grand</option>
+                 <option>Paris</option>
+                 <option>Nancy</option>
+                 <option>Créteil</option>
+                 <option>Villiers-Sur-Marne</option>
+                </select>
+                <br/>
+                Email <input type="mail" name="mail">
+                <br/>
+                Tel <input type="tel" name="tel"/>
+                <br/>
+Date de naissance <input type="date" name="date"/><br/>
+            Un ptit message pour la route ? <textarea name="message" style="height:16px;width:160px;position:static" ></textarea>   
+<br/><br/>
+            <input type="submit" value="annuler" class="bouton_annuler"/>
+            <input type="submit" value="valider" class="bouton_valider"/><br/>
+            <button class="bouton_annuler"> ANNULER </button>
+            <button class="bouton_valider"> VALIDER </button><br/>
+            <button class="bouton">Envoyer formulaire</button>
+        </form>
+<hr/>
+        <h2 id="c">Types de listes HTML</h2>
+        <em><u><b>Les ul</b></u></em>
+            <ul><!--liste avec point avec 'ul' et numéroté avec 'ol'-->
+                <li>Paris</li>
+                <li>Noisy-Le-Grand</li>
+                <li>Venise</li>
+                <li>Marseille</li>
+                <li>Villiers-Sur-Marne</li>
+            </ul>
+            <em><u><b>les ol</b></u></em>
+            <ol>
+                <li>Paris<ul>
+                    <li>Paris 16e</li>
+                    <li>Paris 11e</li>
+                    <li>Paris 12e</li>
+                    <li>Paris 7e</li>               
+                </ul>
+
+                </li>
+                <li>Venise</li>
+                <li>Marseille</li>
+                <li>Noisy-Le-Grand</li>
+                <li>Villiers-Sur-Marne</li>
+            </ol><br/>
+            
+
+           <center> <table border="2"><u><b>P'tit tableau</b></u> <br/><br/>
+             <thead>  <tr>  <!--la balise tr permet d'ajouter une ligne, la balise td créer une colonne-->
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Age</th>
+                    <th>Genre</th>
+                </tr></thead> 
+         <tbody> <!-- thead , tbody et th permettent de "jauger" l'importance des parties tableau et ainsi d'agir sur le référencement -->     
+             <tr>
+                    <td>Billy  </td>
+                    <td>Joe</td>
+                    <td>18</td>
+                    <td>historique</td>
+                </tr>
+                <tr>
+                    <td>Cantelou</td>
+                    <td>Nicolas</td>
+                    <td>Vieux</td>
+                    <td>Pas ouf</td>
+                </tr>
+                <tr>
+                    <td>Robert</td>
+                    <td>Robert</td>
+                    <td>Age de Robert</td>
+                    <td>Plutôt cool</td>
+                </tr></tbody> 
+            </table></center>
+
+
+
+    </main>
+<hr/>
+    <footer>
+        <center>
+            dwwm 2020-2021
+        </center>
+<br/>
+<a href="#logo">Retour en haut !</a>
+    </footer>
+</body>
+</html> 

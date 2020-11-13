@@ -1,0 +1,7 @@
+main#content>article.product>section div:first-child{
+    color: pink;
+}
+
+nav.menu>ul>li:last-child{
+    background-color: chartreuse;
+}

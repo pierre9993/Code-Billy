@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"><span class="fas fa-university"></span> Super Banque</a></li>
+            <li><a href="#monCompte">Mon compte</a></li>
+            <li><a href="#compteJeanArchibald">Compte JeanArchibald</a></li>
+            <li><a href="#comptetoutou">Compte du Toutou</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article id="compte1">
+            <h1 id="monCompte">Mon Compte</h1>
+            <section>
+                <h2>
+                    <span class="fas fa-piggy-bank"></span> Résumé
+                </h2>
+                <h3>Total : <span class="euro">12000</span></h3>
+            </section>
+            <section>
+                <h2>
+                    <span class="fas fa-chart-line"></span> Prévision
+                </h2>
+                <form action="" class="calcul" id="compte1">
+                    <input type="text" name="salaire" id="salaire" placeholder="Salaire" ></input>
+                    <input type="text" name="duree" id="duree" placeholder="Durée"></input>
+                    <button class="calculer" onclick="calculePrevision(event,'compte1')">Calculer <span class='fas fa-calculator'></span></button>
+                </form>
+                <h3>Résultat : <span class="euro">? </span></h3>
+            </section>
+            <section>
+                <h2><span class="fas fa-money-check"></span> Transactions</h2>
+                <table>
+                    <thead>
+                        <th>Date</th>
+                        <th>Libelle</th>
+                        <th>Montant</th>
+                    </thead>
+                    <tr>
+                        <td>2020/10/20</td>
+                        <td>Agrumes</td>
+                        <td class="euro">-15</td>
+                    </tr>
+                </table>
+                <form action="" class="ajout">
+                    <input type="text" name="date" id="date" placeholder="Date" ></input>
+                    <input type="text" name="libelle" id="libelle" placeholder="Libellé"></input>
+                    <input type="text" name="montant" id="montant" placeholder="Montant"></input>
+                    <button class="calculer" onclick="transac(event,'compte1')">Ajouter <span class='fas fa-plus'></span></button>
+                </form>
+            </section>
+        </article>
+
+
+        <article id="compte2">
+            <h1 id="compteJeanArchibald">Compte Jean Archibald</h1>
+            <section>
+                <h2>
+                    <span class="fas fa-piggy-bank"></span> Résumé
+                </h2>
+                <h3>Total : <span class="euro">12000</span></h3>
+            </section>
+            <section>
+                <h2>
+                    <span class="fas fa-chart-line"></span> Prévision
+                </h2>
+                <form action="" class="calcul" id="compte2">
+                    <input type="text" name="salaire" id="salaire" placeholder="Salaire" />
+                    <input type="text" name="duree" id="duree" placeholder="Durée">
+                    <button class="calculer" onclick="calculePrevision(event,'compte2')">Calculer <span class='fas fa-calculator'></span></button>
+                </form>
+                <h3>Résultat : <span class="euro">? </span></h3>
+            </section>
+            <section>
+                <h2><span class="fas fa-money-check"></span> Transactions</h2>
+                <table>
+                    <thead>
+                        <th>Date</th>
+                        <th>Libelle</th>
+                        <th>Montant</th>
+                    </thead>
+                    <tr>
+                        <td>2020/10/20</td>
+                        <td>Pain Choco</td>
+                        <td class="euro">-15</td>
+                    </tr>
+                </table>
+                <form action="" class="ajout">
+                    <input type="text" name="date" id="date" placeholder="Date" ></input>
+                    <input type="text" name="libelle" id="libelle" placeholder="Libellé"></input>
+                    <input type="text" name="montant" id="montant" placeholder="Montant"></input>
+                    <button class="calculer" onclick="transac(event,'compte2')">Ajouter <span class='fas fa-plus'></span></button>
+                </form>
+            </section>
+        </article>
+        
+        <article id="compte3">
+            <h1 id="comptetoutou">Compte du Toutou</h1>
+            <section>
+                <h2>
+                    <span class="fas fa-piggy-bank"></span> Résumé
+                </h2>
+                <h3>Total : <span class="euro">12000</span></h3>
+            </section>
+            <section>
+                <h2>
+                    <span class="fas fa-chart-line"></span> Prévision
+                </h2>
+                <form action="" class="calcul" id="compte3">
+                    <input type="text" name="salaire" id="salaire" placeholder="Salaire" ></input>
+                    <input type="text" name="duree" id="duree" placeholder="Durée"></input>
+                    <button class="calculer" onclick="calculePrevision(event,'compte3')">Calculer <span class='fas fa-calculator'></span></button>
+                </form>
+                <h3>Résultat : <span class="euro">? </span></h3>
+            </section>
+            <section>
+                <h2><span class="fas fa-money-check"></span> Transactions</h2>
+                <table>
+                    <thead>
+                        <th>Date</th>
+                        <th>Libelle</th>
+                        <th>Montant</th>
+                    </thead>
+                    <tr>
+                        <td>2020/10/20</td>
+                        <td>Croissants</td>
+                        <td class="euro">-15</td>
+                    </tr>
+                </table>
+                <form action="" class="ajout">
+                    <input type="text" name="date" id="date" placeholder="Date" ></input>
+                    <input type="text" name="libelle" id="libelle" placeholder="Libellé"></input>
+                    <input type="text" name="montant" id="montant" placeholder="Montant"></input>
+                    <button class="calculer" onclick="transac(event,'compte3')">Ajouter <span class='fas fa-plus'></span></button>
+                </form>
+            </section>
+        </article>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

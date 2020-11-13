@@ -1,0 +1,74 @@
+
+header li{
+    position: relative;
+    display: inline-block;
+    border:ridge 5px black;
+    
+
+}
+header a.actu{
+font-weight: bold;
+
+}
+header a:active{
+    font-weight: bold;
+    color: rgb(93, 122, 63);
+}
+ul{  
+      display: flex;
+      flex-direction: row;
+    background: linear-gradient(grey,white);
+    list
+}
+
+header hr{
+    position: relative;
+    bottom: -14px;
+}
+
+#logo{
+    margin: -5px -371px -10px -4px;
+    position: relative;
+    max-width: 152%;
+}
+
+
+footer{
+    background:linear-gradient(white,grey) ;
+    padding: 0px 0px 50px 0px;;
+}
+textarea{
+    width: 245px;
+    height: 102px;
+}
+p{
+    color: rgba(85, 85, 85, 0.11);
+}
+table{
+    border-radius: 5px 5px 5px 5px;
+    border-color:#c40000;
+    box-shadow: #000000e6 7px 6px 12px;
+}
+td{
+    color: rgb(78, 0, 0);
+}
+th{
+    background-color: black;
+    color: white;
+}
+input{
+    border-radius: 5px 5px 5px 5px;
+}
+textarea{
+    border-radius: 20px 20px 20px 20px ;
+}
+.radio{
+    background-color:red;
+}
+article{
+    background-color:rgba(0, 0, 0, 0.17) ;
+}
+h1{
+    text-shadow: rgb(53, 53, 53) 5px 3px 5px;
+}
+

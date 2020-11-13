@@ -1,0 +1,112 @@
+nav{
+display: flex;
+align-items: center;
+justify-content: start;
+border: ridge 3px grey;
+background-image: url(https://picsum.photos/1334/59);
+flex-direction: row; 
+}
+nav>:last-child{
+    margin-left: auto;
+}
+
+.dropdown:hover .dropbtn{
+    color: greenyellow;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .drop-cont a{
+    color: black;
+    padding: 12px 16px 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .drop-cont{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropbtn{
+    background-color: #000000;
+    color: white;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+  .dropdown:hover .drop-cont {
+    display: block;}
+
+a:link{
+    background-color: #000000;
+    color: white;
+    list-style: none;
+}
+header img{
+    position: relative;
+    width: 50px; height: 50px;
+}
+center img{
+    position: relative;
+    text-align:center;
+    border: groove 5px rgb(226, 226, 226);   
+    
+}
+main li{
+    margin: 0px 30px 0px 0px;
+    border: ridge 4px;
+ }
+main ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;  
+    justify-content: start;
+}
+h1,h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+div ul{
+    display: flex;
+    list-style: none; 
+    justify-content: space-evenly;
+    }
+
+form li, textarea{
+    border: ridge 10px;
+    animation: mymove 5s ; 
+}
+
+table{
+    background: linear-gradient(rgb(182, 47, 182),rgb(56, 151, 240));
+}
+h4{
+    text-align: center;
+    text-decoration: underline;
+}
+ textarea  {
+     resize: none;
+     width: 397px;
+     height: 309px;
+     background-image: url(https://risibank.fr/cache/stickers/d1970/197001-full.png);
+     
+   animation: monmove 5s  ;
+    }
+    @keyframes monmove{
+        50% {height: 520px; width: 400px;};
+            }
+
+    footer{
+        background: linear-gradient(white,grey);
+    }
+    body{
+        font-family: monospace ;
+    }
+a:hover{
+    color: yellowwhite;
+    background-color: rgb(255, 0, 0);
+}

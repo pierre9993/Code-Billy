@@ -1,0 +1,136 @@
+header{
+    position: sticky;
+    background-image: url("https://picsum.photos/1601/100");
+    border: groove 2px black;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+h1,i{
+    background-color: black;
+    border: ridge 2px white;
+    
+}
+header>.menu{
+margin-right: 100px;
+
+}
+.menu>span>a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: ridge 2px white;
+    border-radius: 10% 10% 10%;
+}
+.cmpt1{
+    margin-top: 10px;
+}
+.menu>span>a:hover {
+    color: rgb(185, 185, 185);
+}
+i{
+    margin-left: 5px;
+    top: 33px;
+    position: absolute;
+    background-color: black;
+    border: ridge 2px white;
+    border-radius: 15px 15px 15px 15px;
+}
+h1{
+align-self: flex-start;
+margin-left: 40px;
+margin-right: 20px;
+}
+table{
+    border: solid 2px black;
+    width: 80%;
+    align-self: center;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.bord{
+    border: solid 1px;
+    margin-right: 5px;
+    padding: 1px 5px;
+    margin: 2px 10px;
+}
+.soustab{
+    border: solid 2px black;
+    max-width:80% ;
+    margin: 20px 0;
+    align-self: center;
+    width: 50%;
+   
+}
+td,tr{
+    border: solid 1px black;
+    text-align: center;
+}
+
+h1,h2,th,h3{
+    text-align: center;
+    text-decoration: underline;
+}
+.th1{
+    width: 30%;
+    margin-bottom: 15px;
+}
+.th2{
+    width: 40%;
+    margin-bottom: 15px;
+}
+.th3{
+    width: 30%;
+    margin-bottom: 15px;
+}
+.tabl1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: ridge 5px lightgray;
+    margin: 0 5%;
+    background-color:white;
+}
+.tabl2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: groove 5px lightgray;
+    margin: 0 5%;
+    background-color:white;
+}
+button{
+    max-width: 100px;
+    align-self: center;
+}
+.tablo1,.tablo2{
+    margin-bottom: 20px;
+}
+body{
+    background-color: lightskyblue;
+}
+.soustab>span,.soustab>button{
+    margin-left: 10px;
+}
+.center{
+    align-self: center;
+}
+.under{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:430px){
+    header>.menu{
+        margin-right: 20px;
+        margin-left: 10px;
+        }
+        .soustab{
+            
+            width: 60%;
+        }
+
+
+}

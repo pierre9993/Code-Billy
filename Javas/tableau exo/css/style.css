@@ -1,0 +1,196 @@
+body{
+    background-color: rgb(255, 184, 155)
+}
+i{
+    color: #70a9b4;
+}
+header{
+    border: groove 2px black;
+    background-color:white;
+    padding-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+header>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+header>ul>li{
+    margin-right: 20px;
+    
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+#barre{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: groove 2px black;
+    border-right: none;
+    border-bottom: none;
+    margin-left: auto;
+    margin-right: -8px;
+    margin-top: 10px;
+    
+}
+#barre>h2{
+    margin-left: 35%;
+    text-decoration: underline;
+    margin-top: 6px;
+}
+#pan{
+    margin-top:-14px ;
+}
+.panier>ul{
+    list-style: square;
+    width: 150px
+    
+}
+.tot{
+    margin-left: 15px;
+}
+.panier>ul>li{
+    margin-bottom: 10px;
+    margin-right: -50px;
+    width: 150px;
+}
+#barre>hr{
+    width: 100%;
+    margin-left: auto;
+}
+#produit{
+    margin-right: 40px;
+margin-left: 40px;
+margin-top: 10px;
+    background-color: white;
+    border: groove 2px black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.div>article{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border: ridge 2px black;
+    background-color: rgb(241, 252, 255);
+}
+.div>article>h3{
+    margin-top: 2px;
+    text-decoration: underline;
+}
+.div>article>img{
+    border-bottom: ridge 2px black;;
+    width: 300px;
+    height: 100px;
+}
+.div>article>* {
+    text-align: center;
+}
+.div>article>button{
+    width: 100%;
+    border-top-left-radius:5px ;
+    border-top-right-radius: 5px;
+}
+#barre>button{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+li>img{
+    right: 0;   
+}
+.wind{
+    background-color: rgb(233, 233, 233);
+    box-shadow: 1px 2px 50px black;
+    border: solid 1px black;
+    display: none;
+    position: fixed;
+    bottom: 10%;
+    left: 40%;
+    z-index: 5;
+}
+#contact:hover{
+    color: gray;
+    cursor: pointer;
+}
+#connecm:hover{
+    color: gray;
+    cursor: pointer;
+}
+.contform{
+    padding: 0px 70px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 1px 2px 10px black;
+    border: ridge 5px black;
+    display: none;
+    position: fixed;
+    bottom: 38%;
+    left: 35%;
+    z-index: 5;
+}
+.contform>form>div{
+    margin-bottom: 5px ;
+    text-align: end;
+}
+.contform>button{
+    margin: 0 0 0 -70px;
+}
+
+#connec{
+    display: none;
+    padding: 0px 50px;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 1px 2px 10px black;
+    border: ridge 5px black;
+    position: fixed;
+    right: 35%;
+    top: 25%;
+    z-index: 5;
+
+}
+.pls{
+    text-align: end;
+}
+.anuc{
+    margin: 0px 0 0px -50px;
+}
+center>h2{
+    margin-bottom: 10.92px;
+margin-top: 0.92px;
+}
+#shop{
+    margin-left: 22px;
+    font-size: 38px;
+}
+
+
+@media screen and (max-width: 1000px){
+    
+    main{
+        flex-direction: column;
+        }
+        article>.div{
+            flex-direction: column;
+            width: 60%;
+
+        }
+        #produit{
+            flex-direction: column;
+        }
+
+        article>.div>div{
+            width: 60%;
+        }
+        div>article>img{
+            width: 60%;
+        }
+}

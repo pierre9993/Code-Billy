@@ -1,0 +1,42 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around   ;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+}
+nav {
+    border: solid 1px;
+}
+ul{list-style: none;}
+
+main ul{
+    display: flex ; 
+}
+main ul li{
+ margin-right: 50px;
+
+}
+ul li{
+    border: groove 2px green;
+    
+}
+h1 {
+    text-align: center;
+    text-decoration: underline
+}
+h2{
+    text-align: center;
+    text-decoration: underline
+}
+
+div ul{
+    display: flex;
+    justify-content: space-around;
+}
+textarea{
+    width: 184px;
+height: 107px;
+}
